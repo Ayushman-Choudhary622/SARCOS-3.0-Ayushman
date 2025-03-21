@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background: #000;
+}
+
+.eyes {
+    animation: twinkle 2s infinite;
+}
+
+@keyframes twinkle {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.3; }
+}
+
+.mode-btn {
+    cursor: pointer;
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+a-text {
+    font-family: 'Courier New', monospace;
+    text-shadow: 0 0 15px #0f0;
+    line-height: 1.4;
+}
+
+.arjs-loader {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    background: rgba(0,0,0,0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #0f0;
+    font-family: monospace;
+}
